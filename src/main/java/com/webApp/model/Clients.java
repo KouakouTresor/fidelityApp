@@ -20,7 +20,6 @@ public class Clients implements Serializable {
     private static final long serialVersionUID = -664869542688675108L;
     @Id
     private String id;
-
     @Field("code")
     private String code;
     @Field("name")

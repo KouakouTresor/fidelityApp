@@ -29,10 +29,10 @@ class ClientsTests {
 
 		Clients client = new Clients();
 		client.setCode("09379373939");
-		client.setName("Chris Kouakou");
+		client.setName("Chris koffi");
 		client.setCreationdate(new Date());
 		client.setAddress("20 avenue de la liberté, 34000");
-		client.setEmail("chriskouakou@gmail.com");
+		client.setEmail("chriskoffi@gmail.com");
 		client.setTelephone("0033637917776");
 		client.setActive(true);
 
