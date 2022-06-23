@@ -7,9 +7,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @Service
 @AllArgsConstructor
 public class ClientsServiceImpl implements ClientsService {

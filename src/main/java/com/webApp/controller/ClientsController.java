@@ -12,7 +12,9 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api/clients")
+
 @RestController
 @Slf4j
 public class ClientsController {
@@ -33,7 +35,9 @@ public class ClientsController {
         return new ResponseEntity<Mono<Void>> (clientsServiceImpl.DeleteClient(id), HttpStatus.OK);
     }
 
+
     @RequestMapping(value="/search_all", method = RequestMethod.GET, produces ="application/json")
+
     public  ResponseEntity<Flux<Clients>>  selectAll(){
         log.info("******* GET ALL CLIENTS *******");
         Flux<Clients> clients = clientsServiceImpl.SelectAll()
