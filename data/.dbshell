@@ -1,0 +1,5 @@
+show dbs;
+show admin;
+use admin;
+show collections;
+show users;
