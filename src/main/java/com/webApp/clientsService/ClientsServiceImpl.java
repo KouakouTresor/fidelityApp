@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-@CrossOrigin(origins = "http://localhost:3000")
+
 @Service
 @AllArgsConstructor
 public class ClientsServiceImpl implements ClientsService {
